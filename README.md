@@ -18,13 +18,12 @@ This project uses classical machine learning to detect Parkinson’s disease fro
 6. Evaluate with accuracy, precision, recall, F1-score, and a confusion matrix.
 
 ## Results
+## Results
 
-On the held-out test set, the linear SVM achieves:
+On the held-out test set:
 
-- Accuracy: **0.949**
-- Precision: **0.935**
-- Recall: **1.000**
-- F1-score: **0.967**
+- Linear SVM: Accuracy **0.949**, Precision **0.935**, Recall **1.000**, F1-score **0.967**
+- Random Forest: Accuracy **0.923**, Precision **0.933**, Recall **0.966**, F1-score **0.949**
 
 The confusion matrix shows 0 Parkinson cases missed and 2 healthy cases predicted as Parkinson.
 
@@ -33,3 +32,6 @@ git clone https://github.com/Islam-DS/Parkinson_Disease.git
 cd Parkinson_Disease
 pip install -r requirements.txt
 jupyter notebook
+## Project summary
+
+Built and compared two machine learning models (linear SVM and Random Forest) on a Parkinson’s voice dataset, using proper train–test splitting, feature scaling, and evaluation metrics to achieve high test accuracy and F1-scores.
